@@ -1,5 +1,5 @@
 # HW2: Draw an application vision and upload it to github
-#test
+#testing
 ##########################################################
 #
 #
