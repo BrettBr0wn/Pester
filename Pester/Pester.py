@@ -91,36 +91,87 @@
 
 ##Tkinter Lesson 4 & 5
 
-from Tkinter import *
-window = Tk()
+#from Tkinter import *
+#window = Tk()
 
-label1 = Label(window,text="Name")
-label2 = Label(window,text="Password")
+#label1 = Label(window,text="Name")
+#label2 = Label(window,text="Password")
 
-entry1 = Entry(window)
-entry2 = Entry(window)
+#entry1 = Entry(window)
+#entry2 = Entry(window)
 
-#E stands for east
-label1.grid(row=0, column=0, sticky=E)
-label2.grid(row=1, column=0, sticky=E)
+##E stands for east
+#label1.grid(row=0, column=0, sticky=E)
+#label2.grid(row=1, column=0, sticky=E)
 
-entry1.grid(row=0, column=1)
-entry2.grid(row=1, column=1)
+#entry1.grid(row=0, column=1)
+#entry2.grid(row=1, column=1)
 
-checkBox = Checkbutton(window, text="Keep Me Logged In")
+#checkBox = Checkbutton(window, text="Keep Me Logged In")
 
-checkBox.grid(row=2, columnspan=2)
+#checkBox.grid(row=2, columnspan=2)
 
-window.mainloop()
+#window.mainloop()
 
 
 ##Tkinter Lesson 6
 
+#from Tkinter import *
+#window = Tk()
+
+
+##Way to do this 1
+##def printName():
+##    print("Hello my name is Connor!")
+
+
+
+##button1 = Button(window,text="Print my name",command=printName)
+##button1.pack()
+
+##Way to do this 2
+#def printName(event):
+#    print("Hello my name is Connor!")
+
+##binds a button click to the functions
+#button1 = Button(window,text="Print my name")
+#button1.bind("<Button-1>", printName)
+#button1.pack()
+
+
+#window.mainloop()
+
+
+##Tkinter Lesson 7
+
+#from Tkinter import *
+#window = Tk()
+
+#def leftClick(event):
+#    print("Left")
+
+#def rightClick(event):
+#    print("Right")
+
+#def middleClick(event):
+#    print("Middle")
+
+
+#frame = Frame(window, width=300, height=250)
+
+#frame.bind("<Button-1>", leftClick)
+#frame.bind("<Button-2>", middleClick)
+#frame.bind("<Button-3>", rightClick)
+
+#frame.pack()
+
+#window.mainloop()
+
+##Tkinter Lesson 8
 from Tkinter import *
+
+
+
 window = Tk()
-
-
-
-
 
 window.mainloop()
