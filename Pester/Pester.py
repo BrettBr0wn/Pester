@@ -24,8 +24,15 @@
 #
 ######################################
 
-import Tkinter
-Tkinter._test()
+from Tkinter import *
 
 
-## test test
+
+window = Tk()
+
+label = Label(window, text="hey")
+
+
+label.pack()
+
+window.mainloop()
