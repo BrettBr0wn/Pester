@@ -65,9 +65,27 @@
 
 ##Tkinter Lesson3
 
+#from Tkinter import *
+#window = Tk()
+
+#label1 = Label(window, text="one", bg="red", fg="white")
+
+#label1.pack()
+
+#label2 = Label(window, text="two", bg="green", fg="black")
+
+#label2.pack(fill=X)
+
+#label3 = Label(window, text="three", bg="blue", fg="white")
+
+#label3.pack(side=LEFT, fill=Y)
+
+#window.mainloop()
+
+##Tkinter Lesson 4
+
 from Tkinter import *
 window = Tk()
-
 
 
 
