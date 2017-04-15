@@ -196,34 +196,179 @@ from Tkinter import *
 
 ##Tkinter Lesson 9
 
-from Tkinter import *
+#from Tkinter import *
 
-def doNothing():
-    print("Nothing")
+#def doNothing():
+#    print("Nothing")
 
-window = Tk()
+#window = Tk()
 
-menu = Menu(window)
+#menu = Menu(window)
 
-window.config(menu=menu)
+#window.config(menu=menu)
 
 
-subMenu = Menu(menu)
-menu.add_cascade(label="File",menu=subMenu)
+#subMenu = Menu(menu)
+#menu.add_cascade(label="File",menu=subMenu)
 
-subMenu.add_command(label="New Project...",command=doNothing)
-subMenu.add_command(label="Save",command=doNothing)
+#subMenu.add_command(label="New Project...",command=doNothing)
+#subMenu.add_command(label="Save",command=doNothing)
 
-subMenu.add_separator()
+#subMenu.add_separator()
 
-subMenu.add_command(label="Exit",command=doNothing)
+#subMenu.add_command(label="Exit",command=doNothing)
 
-editMenu = Menu(menu)
-menu.add_cascade(label="Edit",menu=editMenu)
-editMenu.add_command(label="Redo",command=doNothing)
+#editMenu = Menu(menu)
+#menu.add_cascade(label="Edit",menu=editMenu)
+#editMenu.add_command(label="Redo",command=doNothing)
 
-# How do you get rid of the dashed line which does weird stuff?
-window.mainloop()
+## How do you get rid of the dashed line which does weird stuff?
+#window.mainloop()
+
+
+
 
 ##Tkinter Lesson 10
 
+#from Tkinter import *
+
+#def doNothing():
+#    print("Nothing")
+
+#window = Tk()
+
+##***** Main Menu ******
+
+#menu = Menu(window)
+
+#window.config(menu=menu)
+
+
+#subMenu = Menu(menu)
+#menu.add_cascade(label="File",menu=subMenu)
+
+#subMenu.add_command(label="New Project...",command=doNothing)
+#subMenu.add_command(label="Save",command=doNothing)
+
+#subMenu.add_separator()
+
+#subMenu.add_command(label="Exit",command=doNothing)
+
+#editMenu = Menu(menu)
+#menu.add_cascade(label="Edit",menu=editMenu)
+#editMenu.add_command(label="Redo",command=doNothing)
+
+
+## ***** The Toolbar *****
+
+
+#toolbar = Frame(window,bg="blue")
+
+#insertButton = Button(toolbar, text="Insert Image",command=doNothing)
+
+#insertButton.pack(side=LEFT,padx=2,pady=2)
+
+#printButton = Button(toolbar, text="Print",command=doNothing)
+
+#printButton.pack(side=LEFT,padx=2,pady=2)
+
+
+#toolbar.pack(side=TOP,fill=X)
+
+#window.mainloop()
+
+
+##Tkinter Lesson 11
+
+#from Tkinter import *
+
+#def doNothing():
+#    print("Nothing")
+
+#window = Tk()
+
+##***** Main Menu ******
+
+#menu = Menu(window)
+
+#window.config(menu=menu)
+
+
+#subMenu = Menu(menu)
+#menu.add_cascade(label="File",menu=subMenu)
+
+#subMenu.add_command(label="New Project...",command=doNothing)
+#subMenu.add_command(label="Save",command=doNothing)
+
+#subMenu.add_separator()
+
+#subMenu.add_command(label="Exit",command=doNothing)
+
+#editMenu = Menu(menu)
+#menu.add_cascade(label="Edit",menu=editMenu)
+#editMenu.add_command(label="Redo",command=doNothing)
+
+
+## ***** The Toolbar *****
+
+
+#toolbar = Frame(window,bg="blue")
+
+#insertButton = Button(toolbar, text="Insert Image",command=doNothing)
+
+#insertButton.pack(side=LEFT,padx=2,pady=2)
+
+#printButton = Button(toolbar, text="Print",command=doNothing)
+
+#printButton.pack(side=LEFT,padx=2,pady=2)
+
+
+#toolbar.pack(side=TOP,fill=X)
+
+
+## ***** Status Bar *****
+##bd = boarder
+#status = Label(window, text="File Saved",bd=1, relief=SUNKEN, anchor=W)
+#status.pack(side=BOTTOM, fill=X)
+
+
+#window.mainloop()
+
+##Tkinter Lesson 12
+
+#from Tkinter import *
+#import tkMessageBox
+
+
+#window = Tk()
+
+
+#tkMessageBox.showinfo('Window Title', 'Window Message')
+
+#answer = tkMessageBox.askquestion('Window Title', 'Yes or No Question')
+
+#if answer == 'yes':
+#    print("Yes")
+    
+
+#window.mainloop()
+
+##Tkinter Lesson 13
+from Tkinter import *
+
+window = Tk()
+
+canvas = Canvas(window, width=200, height=100)
+canvas.pack()
+
+blackLine = canvas.create_line(0,0,200,100)
+redLine = canvas.create_line(200,0,0,100,fill="red")
+
+greenBox = canvas.create_rectangle(50,50,100,100,fill="green")
+
+canvas.delete(redLine)
+
+canvas.delete(ALL)
+
+
+window.mainloop()
