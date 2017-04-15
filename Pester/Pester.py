@@ -171,7 +171,59 @@
 from Tkinter import *
 
 
+#class ConnorsButtons:
+    
+#    #class constructor
+#    #self references the class 
+#    def __init__(self, master):
+#        frame = Frame(master)
+#        frame.pack()
+        
+#        self.printButton = Button(frame, text="Print Message",command=self.printMessage)
+#        self.printButton.pack(side=LEFT)
+
+#        self.quitButton = Button(frame, text="Quit", command=frame.quit)
+#        self.quitButton.pack(side=LEFT)
+
+#    def printMessage(self):
+#        print("Wow this actually worked")
+
+#window = Tk()
+
+#obj = ConnorsButtons(window)
+
+#window.mainloop()
+
+##Tkinter Lesson 9
+
+from Tkinter import *
+
+def doNothing():
+    print("Nothing")
 
 window = Tk()
 
+menu = Menu(window)
+
+window.config(menu=menu)
+
+
+subMenu = Menu(menu)
+menu.add_cascade(label="File",menu=subMenu)
+
+subMenu.add_command(label="New Project...",command=doNothing)
+subMenu.add_command(label="Save",command=doNothing)
+
+subMenu.add_separator()
+
+subMenu.add_command(label="Exit",command=doNothing)
+
+editMenu = Menu(menu)
+menu.add_cascade(label="Edit",menu=editMenu)
+editMenu.add_command(label="Redo",command=doNothing)
+
+# How do you get rid of the dashed line which does weird stuff?
 window.mainloop()
+
+##Tkinter Lesson 10
+
