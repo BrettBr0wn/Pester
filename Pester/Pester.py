@@ -372,3 +372,17 @@ canvas.delete(ALL)
 
 
 window.mainloop()
+
+##Tkinter Lesson 14 - Images and Icons
+
+#from Tkinter import *
+
+#window = Tk()
+
+##file has to have the file path if it is not local
+#photo = PhotoImage(file="img1.png")
+#label = Label(window,image=photo)
+
+#label.pack()
+
+#window.mainloop()
