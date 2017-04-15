@@ -22,7 +22,14 @@
 #
 #
 #
-######################################
+##############################################################
+#                      Tkinter Lessons
+#
+#  https://www.youtube.com/channel/UCJbPGzawDH1njbqV-D5HqKw
+#
+##############################################################
+
+
 ##Tkinter Lesson 1
 #from Tkinter import *
 
@@ -82,10 +89,37 @@
 
 #window.mainloop()
 
-##Tkinter Lesson 4
+##Tkinter Lesson 4 & 5
 
 from Tkinter import *
 window = Tk()
+
+label1 = Label(window,text="Name")
+label2 = Label(window,text="Password")
+
+entry1 = Entry(window)
+entry2 = Entry(window)
+
+#E stands for east
+label1.grid(row=0, column=0, sticky=E)
+label2.grid(row=1, column=0, sticky=E)
+
+entry1.grid(row=0, column=1)
+entry2.grid(row=1, column=1)
+
+checkBox = Checkbutton(window, text="Keep Me Logged In")
+
+checkBox.grid(row=2, columnspan=2)
+
+window.mainloop()
+
+
+##Tkinter Lesson 6
+
+from Tkinter import *
+window = Tk()
+
+
 
 
 
