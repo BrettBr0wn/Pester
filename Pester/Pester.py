@@ -30,7 +30,7 @@
 ##############################################################
 
 
-##Tkinter Lesson 1
+##Tkinter Lesson 1 - Introduction
 #from Tkinter import *
 
 
@@ -45,7 +45,7 @@
 #window.mainloop()
 
 
-##Tkinter Lesson 2
+##Tkinter Lesson 2 - Organizing your Layout
 
 #from Tkinter import *
 #window = Tk()
@@ -70,7 +70,7 @@
 
 #window.mainloop()
 
-##Tkinter Lesson3
+##Tkinter Lesson3 - Fitting Widgets in your Layout
 
 #from Tkinter import *
 #window = Tk()
@@ -89,7 +89,7 @@
 
 #window.mainloop()
 
-##Tkinter Lesson 4 & 5
+##Tkinter Lesson 4 & 5 - Grid Layout
 
 #from Tkinter import *
 #window = Tk()
@@ -114,7 +114,7 @@
 #window.mainloop()
 
 
-##Tkinter Lesson 6
+##Tkinter Lesson 6 - Binding Functions to Layouts
 
 #from Tkinter import *
 #window = Tk()
@@ -142,7 +142,7 @@
 #window.mainloop()
 
 
-##Tkinter Lesson 7
+##Tkinter Lesson 7 - Mouse Click Events
 
 #from Tkinter import *
 #window = Tk()
@@ -167,7 +167,7 @@
 
 #window.mainloop()
 
-##Tkinter Lesson 8
+##Tkinter Lesson 8 - Using Classes
 from Tkinter import *
 
 
@@ -194,7 +194,7 @@ from Tkinter import *
 
 #window.mainloop()
 
-##Tkinter Lesson 9
+##Tkinter Lesson 9 - Creating Drop Down Menus
 
 #from Tkinter import *
 
@@ -228,7 +228,7 @@ from Tkinter import *
 
 
 
-##Tkinter Lesson 10
+##Tkinter Lesson 10 - Creating a Toolbar
 
 #from Tkinter import *
 
@@ -278,7 +278,7 @@ from Tkinter import *
 #window.mainloop()
 
 
-##Tkinter Lesson 11
+##Tkinter Lesson 11 - Adding the Status Bar
 
 #from Tkinter import *
 
@@ -334,7 +334,7 @@ from Tkinter import *
 
 #window.mainloop()
 
-##Tkinter Lesson 12
+##Tkinter Lesson 12 - Messagebox
 
 #from Tkinter import *
 #import tkMessageBox
@@ -353,25 +353,25 @@ from Tkinter import *
 
 #window.mainloop()
 
-##Tkinter Lesson 13
-from Tkinter import *
+##Tkinter Lesson 13 - Shapes and Graphics
+#from Tkinter import *
 
-window = Tk()
+#window = Tk()
 
-canvas = Canvas(window, width=200, height=100)
-canvas.pack()
+#canvas = Canvas(window, width=200, height=100)
+#canvas.pack()
 
-blackLine = canvas.create_line(0,0,200,100)
-redLine = canvas.create_line(200,0,0,100,fill="red")
+#blackLine = canvas.create_line(0,0,200,100)
+#redLine = canvas.create_line(200,0,0,100,fill="red")
 
-greenBox = canvas.create_rectangle(50,50,100,100,fill="green")
+#greenBox = canvas.create_rectangle(50,50,100,100,fill="green")
 
-canvas.delete(redLine)
+#canvas.delete(redLine)
 
-canvas.delete(ALL)
+#canvas.delete(ALL)
 
 
-window.mainloop()
+#window.mainloop()
 
 ##Tkinter Lesson 14 - Images and Icons
 
